@@ -1,5 +1,4 @@
-# z
-eeeee
+
 Õpilane Angelika Haav
 
 -Muutujad
