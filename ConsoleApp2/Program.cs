@@ -42,51 +42,51 @@
 
 
 
-            int arv1 = 0;
-            int arv2 = 0;
-            Console.WriteLine("Tere, palun sisesta esimene arv");
-            arv1 = int.Parse(Console.ReadLine());
-            Console.WriteLine("Tere, palun sisesta teine arv");
-            arv2 = int.Parse(Console.ReadLine());
-            int liitmine = arv1 + arv2;
-            Console.WriteLine("Missugust tehet soovid teha? Kirjuta kas: + - * /");
-            string tehtetüüp = Console.ReadLine();
-            int tehe = 0;
+            //int arv1 = 0;
+            //int arv2 = 0;
+            //Console.WriteLine("Tere, palun sisesta esimene arv");
+            //arv1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Tere, palun sisesta teine arv");
+            //arv2 = int.Parse(Console.ReadLine());
+            //int liitmine = arv1 + arv2;
+            //Console.WriteLine("Missugust tehet soovid teha? Kirjuta kas: + - * /");
+            //string tehtetüüp = Console.ReadLine();
+            //int tehe = 0;
 
-            if (tehtetüüp == "+"  /*tingimus siia*/)
-            {
-                tehe = arv1 + arv2;
-            }
-
-          
-
-
-            if (tehtetüüp == "-"    /*tingimus siia*/)
-            {
-                tehe = arv1 - arv2;
-            }
-
-          
-
-
-            if (tehtetüüp == "*"   /*tingimus siia*/)
-            {
-                tehe = arv1 * arv2;
-            }
-
-          
-
-
-            if (tehtetüüp == "/"   /*tingimus siia*/)
-             {
-                tehe = arv1 / arv2;
-            }
+            //if (tehtetüüp == "+"  /*tingimus siia*/)
+            //{
+            //    tehe = arv1 + arv2;
+            //}
 
 
 
 
+            //if (tehtetüüp == "-"    /*tingimus siia*/)
+            //{
+            //    tehe = arv1 - arv2;
+            //}
 
-            Console.WriteLine($" {tehtetüüp} Tehte tulemus: {tehe}");
+
+
+
+            //if (tehtetüüp == "*"   /*tingimus siia*/)
+            //{
+            //    tehe = arv1 * arv2;
+            //}
+
+
+
+
+            //if (tehtetüüp == "/"   /*tingimus siia*/)
+            // {
+            //    tehe = arv1 / arv2;
+            //}
+
+
+
+
+
+            //Console.WriteLine($" {tehtetüüp} Tehte tulemus: {tehe}");
 
 
             //  int arv3 = 0;
@@ -123,13 +123,62 @@
             // - lahutamine
             // / jagamine
             // * korrutamine
+            string lemmikpuuvili = "";
+            string valik = "";
+            string lemmikjuurvili = "Jah";
+            Console.WriteLine("Kas sulle meeldivad juurviljad või puuviljad?");
+            valik = Console.ReadLine();
+
+            if (valik == "puuviljad")
+            {
+                Console.WriteLine("Missugune puuvili sulle meeldib?");
+
+                lemmikpuuvili = Console.ReadLine();
 
 
 
+                if (lemmikpuuvili == "maasikas")
+                {
+                    Console.WriteLine("Maasikas ei ole puuvili");
+                }
+                else if (lemmikpuuvili == "pirn")
+                {
+                    Console.WriteLine("Kas magus pirn või hapu pirn, mõlemad on head");
+                }
+                else if (lemmikpuuvili == "kartul")
+                {
+                    Console.WriteLine("See ei kasva isegi mitte puu otsas");
+                }
+                else
+                {
+                    Console.WriteLine("Ei tunne seda puuvilja");
+                }
+            }
+
+            else if (valik == "juurviljad")
+            {
+                Console.WriteLine("Missugune juurvili sulle meeldib?");
 
 
+                lemmikjuurvili = Console.ReadLine();
 
+                if (lemmikjuurvili == "maasikas")
+                {
+                    Console.WriteLine("Maasikas ei ole juurvili");
+                }
+                else if (lemmikjuurvili == "pirn")
+                {
+                    Console.WriteLine("Pirn ei ole juurvili");
+                }
+                else if (lemmikjuurvili == "kartul")
+                {
+                    Console.WriteLine("Kartulid meeldivad mulle ka");
+                }
 
+            }else
+            {
+                Console.WriteLine("Seda valikut ei ole");
+            }
         }
     }
 }
